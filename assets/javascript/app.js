@@ -4,6 +4,8 @@ $(document).ready(function(){
     console.log(tvShows);
 
     function displayTvShow(){
+
+        $("#gifs-appear-here").empty();
         
         var x = $(this).data("search");
 	    console.log(x);
@@ -33,8 +35,8 @@ $(document).ready(function(){
                 newImg.attr("data-state", "still");
         	    newImg.attr("data-still", staticSrc);
         	    newImg.attr("data-animate", defaultAnimatedSrc);
-                gifDiv.prepend(p);
-                gifDiv.prepend(newImg);
+                gifDiv.append(p);
+                gifDiv.append(newImg);
                 $("#gifs-appear-here").prepend(gifDiv);
             }
         })

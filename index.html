@@ -5,19 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Doin' it with Giphy</title>
+    <title>Doin' it with Giphy and AJAX</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
 
-    
-        <h1>TV Show Search</h1>
+    <header>
+        <h1>Television Addicts Anonymous</h1>
+    </header>
 
-        <!-- Movies will get dumped here -->
-        <div class="container">
+    <!-- TV Shows will get dumped here -->
+    <div class="container">
         <div class="row">
             <div class="col-xs-12">
 
@@ -27,27 +29,34 @@
             </div>
         </div>
     </div>
-<br>
-<br>
+    <br>
+    <br>
 
     <div class="container">
         <div class="row">
-            <div class="col-xs-4">
+            <div class="col-xs-12">
                 <form id="tv-form">
                     <label for="tv-input"></label>
                     <input type="text" id="tv-input">
                     <br>
+                    <br>
 
-                    <!-- Button triggers new movie to be added -->
+                    <!-- Button triggers new tv show to be added -->
                     <input id="add-show" type="submit" value="Submit">
                 </form>
-            <div class="col-xs-8">
-                <div id="gifs-appear-here">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-xs-12" id="giphys">
+                            <span>
+                                <div id="gifs-appear-here"></div>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/app.js"></script>
