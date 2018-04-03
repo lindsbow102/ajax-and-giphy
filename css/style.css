@@ -18,6 +18,10 @@ h1 {
     padding-top: 20px;
 }
 
+h4 {
+    text-align: center;
+}
+
 #tv-form {
     color: #333;
     float: right;
